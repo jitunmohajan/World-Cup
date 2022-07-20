@@ -16,11 +16,15 @@ body{
     
 }
 
+.navi-blue-color{
+    background-color: #11233b;
+}
+
 /* Top Banner start*/
 .top-banner{
     display: flex;
     justify-content: center;
-    background-color: #161616;
+    /* background-color: #161616; */
     border-radius: 30px;
     margin-top: 50px;
 }
@@ -79,7 +83,7 @@ body{
     justify-content: space-evenly;
     width: 312px;
     height: 312px;
-    background-color: #161616;
+    /* background-color: #161616; */
     border-radius: 10px;
 }
 .option-btn{
@@ -190,7 +194,7 @@ body{
 
 /* footer start*/
 .footer-details{
-    background-color: #161616;
+    /* background-color: #161616; */
     margin-bottom: 0;
     text-align: center;
     display: flex;
