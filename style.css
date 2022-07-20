@@ -32,13 +32,15 @@ body{
     font-size: 70px;
     font-weight: 700;
     color: #FFFFFF;
+    line-height: 80px;
     
 }
 .top-banner-detail p{
     color: #FFFFFF;
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
+    line-height: 26px;
 }
 .btn{
     text-decoration: none;
@@ -175,6 +177,10 @@ body{
 .view-btn{
     visibility: hidden;
 }
+#view-btn{
+    padding: 12px 24px;
+    font-size: 20px;
+}
 
 
 /* footer start*/
@@ -234,10 +240,16 @@ body{
          display: flex;
          flex-direction: column;
      }
+     .top-banner-detail p{
+        font-size: 14px;
+        line-height: 24px;
+     }
      .top-banner-detail h1{
          font-size: 22px;
          font-weight: 700;
          color: #FFFFFF;
+         line-height: 33px;
+         
      }
      .btn{
          font-size: 20px;
@@ -305,10 +317,11 @@ body{
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 0;
+        line-height: 50px;
     }
     .top-banner-detail p{
-        /* font-weight: 400; */
         font-size: 14px;
+        line-height: 24px;
     }
     .top-banner-image{
         padding-top: 58px;
