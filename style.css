@@ -1,13 +1,13 @@
+/* import poppins font font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* Common Style */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    /* background-color: #F3F1FF; */
+  
 }
-
 
 .container{
     max-width: 1320px;
@@ -15,7 +15,8 @@ body{
     margin-bottom: 124px;
     
 }
-/* Top Banner */
+
+/* Top Banner start*/
 .top-banner{
     display: flex;
     justify-content: center;
@@ -47,16 +48,19 @@ body{
     padding: 16px 25px;
     background: #DD0000;
     border-radius: 5px;
+    
 }
 .btn:hover{
     background-color: tomato;
-    transform: scaleX(0.15);
     cursor: pointer;
+    
 }
 .top-banner-image img{
     width: 581px;
     height: 613px;
+    display: block;
 }
+/* Top Banner end*/
 
 /* main section */
 
@@ -65,8 +69,8 @@ body{
     display: flex;
     justify-content: space-around;
 }
-/* options */
 
+/* options  start*/
 .options{
     display: flex;
     flex-direction: column;
@@ -93,6 +97,7 @@ body{
     color: #FFFFFF;
     background-color: #DD0000;
 }
+/* options end */
 
 /* blog details */
 .blogs{
@@ -101,10 +106,14 @@ body{
     row-gap: 24px;
     column-gap: 24px;
 }
+#blogs-id{
+    flex-grow: 1;
+    margin-left: 25px;
+}
 .blog{
     width: 312px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .blog h4{
     border: 1px solid gray;
@@ -124,12 +133,19 @@ body{
     border: 1px solid gray;
     padding: 2px 15px;
     border-radius: 5px;
-    /* margin-top: 24px; */
-
+    display: inline-block;
+    margin-top: 20px;
 }
+.blog-detail-statistics{
+    display: flex;
+    color: #B9B9B9;
+}
+.clock{
+    padding-right: 18px;
+}
+/* blog end */
 
-
-/* upcoming matchs */
+/* upcoming matchs  start*/
 .upcoming-matchs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -139,7 +155,7 @@ body{
 .upcoming-match{
     width: 312px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -148,11 +164,12 @@ body{
 }
 .flag{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .upcoming-match-detail{
     text-align: center;
 }
+/* upcoming matchs  end*/
 
 /* View Button */
 .view-btn{
@@ -160,7 +177,7 @@ body{
 }
 
 
-/* footer */
+/* footer start*/
 .footer-details{
     background-color: #161616;
     margin-bottom: 0;
@@ -178,13 +195,15 @@ body{
     width: 90%;
     
 }
+
 .footer-manu{
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .footer-manu p{
     color: #B9B9B9;
+    margin: 0 30px;
 }
 .social-media{
     padding-top: 2%;
@@ -194,12 +213,86 @@ body{
     color: #FFFFFF;
     font-size: 40px;
 }
+/* footer end */
 
+/* Mobile Device */
+@media screen and (max-width: 767px) {
+    .container{
+         max-width: 334px;
+         margin-bottom: 24px;
+     }
+     /* top banner start */
+     .top-banner{
+         flex-direction: column;
+         align-items: center;
+         width: 334px;
+         border-radius: 10px;
+     }
+     .top-banner-detail{
+         width: 258px;
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+     }
+     .top-banner-detail h1{
+         font-size: 22px;
+         font-weight: 700;
+         color: #FFFFFF;
+     }
+     .btn{
+         font-size: 20px;
+         font-weight: 400;
+         background-color:#DD0000;
+     }
+     .top-banner-image img{
+         width: 233px;
+         height: 245px;
+         padding-top: 21px;
+     }
+     /* top banner end */
 
+     /* main container start */
+     .main-container-detail{
+         flex-direction: column;
+         align-items: center;
+     }
+     .options{
+         background-color: white;
+     }
+     .option-btn{
+         border: 1px solid gray;
+     }
+ 
+     .blogs{
+         grid-template-columns: repeat(1,1fr);
+         row-gap: 24px;
+         column-gap: 24px;
+     }
+     #blogs-id{
+        margin: 0 auto;
+     }
+ 
+     .upcoming-matchs{
+         grid-template-columns: repeat(1,1fr);
+         row-gap: 24px;
+         column-gap: 24px;
+     }
+     /* main container end */
+ 
+     /* footer start */
+     .footer-manu{
+         flex-direction: column;
+     }
+     /* footer end */
+ }
 
 
 /* tablet devices */
-@media (min-width: 689px) and (min-width: 689px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        max-width: 734px;
+    }
+    /* top banner start */
     .top-banner{
         width: 734px;
         justify-content: space-around;
@@ -229,12 +322,14 @@ body{
         padding: 12px;
         margin-bottom: 15%;
     }
+    /* top banner end */
 
-    /* Blog details */
+    /* Main container */
     .main-container-detail{
         flex-direction: column;
         margin-bottom: 5%;
     }
+    /* options start */
     .options{
         flex-direction: row;
         width: 100%;
@@ -244,91 +339,101 @@ body{
         
     }
     .option-btn{
-        font-size: 30px;
-        padding: 12px;
-        border-radius: 5px;
+        font-size: 18px;
+        width: 210px;
+        border-radius: 10px;
         border: 1px solid #B9B9B9;
     }
+    /* options end */
+
+    /* blog start */
     .blogs{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
-/* Upcoming Matchs */
+    #blogs-id{
+        margin: 0 auto;
+     }
+    /* blog end */
+
+    /* Upcoming Matchs start*/
     .upcoming-matchs{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
+    /* upcoming match end */
 
-/* View Button */
+    /* View Button start*/
    .view-btn{
         visibility: visible;
         text-align: center;
     }
-
+    /* view button end */
 }
 
-
-/* Mobile Device */
-@media only screen and (max-width:688px){
-   .container{
-        
-        margin-bottom: 24px;
+/* Medium devices */
+@media (min-width: 992px) and (max-width: 1250px) {
+    .container{
+        max-width: 950px;
     }
     .top-banner{
-        flex-direction: column;
-        align-items: center;
-        width: 334px;
-        border-radius: 10px;
+        /* width: 900px; */
+        justify-content: space-around;
     }
     .top-banner-detail{
-        width: 258px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
+        width: 313px;
+        padding-left: 60px;
     }
     .top-banner-detail h1{
-        font-size: 22px;
+        font-size: 35px;
         font-weight: 700;
-        color: #FFFFFF;
+        margin-bottom: 0;
     }
-    .btn{
-        font-size: 20px;
-        font-weight: 400;
-        background-color:#DD0000;
+    .top-banner-detail p{
+        font-size: 14px;
+    }
+    .top-banner-image{
+        padding-top: 58px;
     }
     .top-banner-image img{
-        width: 233px;
-        height: 245px;
-        padding-top: 21px;
+        width: 323px;
+        height: 340px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 12px;
+        margin-bottom: 15%;
     }
     .main-container-detail{
-        flex-direction: column;
-        align-items: center;
+        
     }
-    .options{
-        background-color: white;
-    }
+    .options{  
+        max-width: 200px;
+        max-height: 200px; 
+    } 
     .option-btn{
-        border: 1px solid gray;
+        font-size: 15px;
+        /* margin-bottom: -23px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-
     .blogs{
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 24px;
-        column-gap: 24px;
+        /* display: none; */
+    }
+    .blog{
+        max-width: 200px;
+    }
+    .blog-thumbnail img{
+        max-width: 200px;
     }
 
-    .upcoming-matchs{
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 24px;
-        column-gap: 24px;
+    .upcoming-match{
+        max-width: 200px;
     }
-
-     /* #view-btn{
-        visibility: visible;
-    } */
-    .footer-manu{
-        flex-direction: column;
+    .flag img{
+        width: 60px;
+        height: 40px;
     }
+    
 }
+
