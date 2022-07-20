@@ -154,6 +154,11 @@ body{
     row-gap: 24px;
     column-gap: 24px;
 }
+
+#upcoming-matchs-id{
+    flex-grow: 1;
+    margin-left: 25px;
+}
 .upcoming-match{
     width: 312px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -289,6 +294,9 @@ body{
          row-gap: 24px;
          column-gap: 24px;
      }
+     #upcoming-matchs-id{
+        margin: 0 auto;
+     }
      /* main container end */
  
      /* footer start */
@@ -374,6 +382,9 @@ body{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
     }
+    #upcoming-matchs-id{
+        margin: 0 auto;
+     }
     /* upcoming match end */
 
     /* View Button start*/
@@ -446,6 +457,12 @@ body{
 
     .upcoming-match{
         max-width: 200px;
+    }
+    .upcoming-match-detail h3{
+        font-size: 15px;
+    }
+    .upcoming-match-detail p{
+        font-size: 14px;
     }
     .flag img{
         width: 60px;
