@@ -310,6 +310,7 @@ body{
     .top-banner{
         width: 734px;
         justify-content: space-around;
+        margin-bottom: 50px;
     }
     .top-banner-detail{
         width: 313px;
