@@ -16,7 +16,7 @@ body{
     
 }
 
-.navi-blue-color{
+.navy-blue-color{
     background-color: #11233b;
 }
 
@@ -24,7 +24,6 @@ body{
 .top-banner{
     display: flex;
     justify-content: center;
-    /* background-color: #161616; */
     border-radius: 30px;
     margin-top: 50px;
 }
@@ -83,7 +82,6 @@ body{
     justify-content: space-evenly;
     width: 312px;
     height: 312px;
-    /* background-color: #161616; */
     border-radius: 10px;
 }
 .option-btn{
@@ -194,7 +192,6 @@ body{
 
 /* footer start*/
 .footer-details{
-    /* background-color: #161616; */
     margin-bottom: 0;
     text-align: center;
     display: flex;
@@ -442,12 +439,8 @@ body{
     } 
     .option-btn{
         font-size: 15px;
-        /* margin-bottom: -23px; */
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    .blogs{
-        /* display: none; */
     }
     .blog{
         max-width: 200px;
@@ -458,7 +451,6 @@ body{
     .blog-thumbnail img{
         max-width: 200px;
     }
-
     .upcoming-match{
         max-width: 200px;
     }
@@ -472,6 +464,5 @@ body{
         width: 60px;
         height: 40px;
     }
-    
 }
 
